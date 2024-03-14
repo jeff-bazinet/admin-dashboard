@@ -63,6 +63,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   border: 5px solid red;
+  padding-bottom: 20px;
 }
 
 .main .left{
@@ -73,25 +74,13 @@ body {
 padding: 30px 30px 10px 20px;
 }
 
-.main .right{
-    border: 5px solid lightpink;
-}
-
-.main .left .project-cards{
+.project-cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 0px 20px;
   gap: 20px;
 }
 
-/*
-.main .left .project-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  border: 1px solid red;
-}
-*/
 .project-card {
   width: minmax(300px, auto);
   height: min(300px);
@@ -99,3 +88,52 @@ padding: 30px 30px 10px 20px;
   border-radius: 10px;
   padding: 20px;
 }
+
+.main .right{
+    border: 5px solid lightpink;
+}
+
+.announce-header{
+    padding: 30px 30px 0px 20px;
+}
+
+.announce-cards{
+    display: grid;
+    padding: 0px 20px 20px 20px;
+    gap: 20px;
+}
+
+.announce-card{
+    border-radius: 10px;
+    width: minmax(200px, auto);
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.trending-header{
+    padding: 30px 30px 10px 20px;
+}
+
+
+/*
+
+
+<h2 class="announce-header">Announcements</h2>
+<div class="announce-cards">
+  <div class="announce-card">
+    <p>Site Maintenance</p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Recusandae, dolore odio sint facilis nisi itaque sequi laborum
+      dolorum similique veritatis asperiores, odit enim provident
+      magni voluptas minus? Dolorem, enim atque.
+    </p>
+  </div>
+  <div class="announce-card">
+    <p>Community Share Day</p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Recusandae, dolore odio sint facilis nisi itaque sequi laborum
+      dolorum similique veritatis asperiores, odit enim provident
+      magni voluptas minus? Dolorem, enim atque.
+    </p> */
