@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "aside header header header"
+    "aside projects projects annoncements"
+    "asid";
+}
+
+.sidebar {
+    background-color: rgb(92, 171, 245);
+    width: 370px;
+    height: 100vh;
+}

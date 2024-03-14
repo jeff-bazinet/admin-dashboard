@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/script.js"></script>
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <aside>
+    <aside class="sidebar">
       <h1 class="dashboard">Dashboard</h1>
       <ul>
         <li><img src="" alt="" /><a href="#Home">Home</a></li>
@@ -24,7 +30,7 @@
         <li><img src="" alt="" /><a href="#Privacy">Privacy</a></li>
       </ul>
     </aside>
-    <header>
+    <header class="header">
       <div class="search">
         <img
           src="images/magnifyingglass.png"
@@ -46,7 +52,9 @@
         <button>Upload</button>
         <button>Share</button>
       </div>
-      <div>
+    </header>
+    <div class="main">
+      <div class="left">
         <h2 class="project-header">Your Projects</h2>
         <div class="project-card">
           <p>Super Cool Project</p>
@@ -142,67 +150,69 @@
           </div>
         </div>
       </div>
-      <div>
-        <h2 class="announce-header">Announcements</h2>
-        <div class="announce-cards">
-          <div class="announce-card">
-            <p>Site Maintenance</p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae, dolore odio sint facilis nisi itaque sequi laborum
-              dolorum similique veritatis asperiores, odit enim provident magni
-              voluptas minus? Dolorem, enim atque.
-            </p>
+      <div class="right">
+        <div class="announcements">
+          <h2 class="announce-header">Announcements</h2>
+          <div class="announce-cards">
+            <div class="announce-card">
+              <p>Site Maintenance</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Recusandae, dolore odio sint facilis nisi itaque sequi laborum
+                dolorum similique veritatis asperiores, odit enim provident
+                magni voluptas minus? Dolorem, enim atque.
+              </p>
+            </div>
+            <div class="announce-card">
+              <p>Community Share Day</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Recusandae, dolore odio sint facilis nisi itaque sequi laborum
+                dolorum similique veritatis asperiores, odit enim provident
+                magni voluptas minus? Dolorem, enim atque.
+              </p>
+            </div>
+            <div class="Updated Privacy Policy">
+              <p>Site Maintenance</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate illum expedita, atque deserunt est, rerum,
+                exercitationem quos suscipit quis cumque pariatur voluptatem
+                aspernatur error. Nesciunt reprehenderit quasi earum vel
+                distinctio. Aliquam cum id ipsam, quisquam a incidunt facere
+                cupiditate aliquid. Ipsa repellendus quis quam voluptatibus
+                expedita magni. Ab assumenda accusamus ut provident sapiente,
+                sunt a, quibusdam voluptate tempore expedita odit.
+              </p>
+            </div>
           </div>
-          <div class="announce-card">
-            <p>Community Share Day</p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae, dolore odio sint facilis nisi itaque sequi laborum
-              dolorum similique veritatis asperiores, odit enim provident magni
-              voluptas minus? Dolorem, enim atque.
-            </p>
-          </div>
-          <div class="Updated Privacy Policy">
-            <p>Site Maintenance</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate illum expedita, atque deserunt est, rerum,
-              exercitationem quos suscipit quis cumque pariatur voluptatem
-              aspernatur error. Nesciunt reprehenderit quasi earum vel
-              distinctio. Aliquam cum id ipsam, quisquam a incidunt facere
-              cupiditate aliquid. Ipsa repellendus quis quam voluptatibus
-              expedita magni. Ab assumenda accusamus ut provident sapiente, sunt
-              a, quibusdam voluptate tempore expedita odit.
-            </p>
+        </div>
+        <div class="trending">
+          <h2 class="trending-header">Trending</h2>
+          <div class="trending-cards">
+            <div class="trending-card">
+              <img src="images/dog.png" alt="Trending User Icon" />
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+            <div class="trending-card">
+              <img src="images/cat.png" alt="Trending User Icon" />
+              <p>@jeffbazinet</p>
+              <p>Super Cool Project</p>
+            </div>
+            <div class="trending-card">
+              <img src="images/orangespiderman.png" alt="Trending User Icon" />
+              <p>@kendall</p>
+              <p>Life Changing App</p>
+            </div>
+            <div class="trending-card">
+              <img src="images/penguin.png" alt="Trending User Icon" />
+              <p>@alex</p>
+              <p>No Traffic Maker</p>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <h2 class="trending-header">Trending</h2>
-        <div class="trending-cards">
-          <div class="trending-card">
-            <img src="images/dog.png" alt="Trending User Icon" />
-            <p>@tegan</p>
-            <p>World Peace Builder</p>
-          </div>
-          <div class="trending-card">
-            <img src="images/cat.png" alt="Trending User Icon" />
-            <p>@jeffbazinet</p>
-            <p>Super Cool Project</p>
-          </div>
-          <div class="trending-card">
-            <img src="images/orangespiderman.png" alt="Trending User Icon" />
-            <p>@kendall</p>
-            <p>Life Changing App</p>
-          </div>
-          <div class="trending-card">
-            <img src="images/penguin.png" alt="Trending User Icon" />
-            <p>@alex</p>
-            <p>No Traffic Maker</p>
-          </div>
-        </div>
-      </div>
-    </header>
+    </div>
   </body>
 </html>
