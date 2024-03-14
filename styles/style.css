@@ -114,26 +114,14 @@ padding: 30px 30px 10px 20px;
     padding: 30px 30px 10px 20px;
 }
 
+.trending-cards{
+    display: grid;
+    padding: 0px 20px 20px 20px;
+    gap: 20px;
+}
 
-/*
-
-
-<h2 class="announce-header">Announcements</h2>
-<div class="announce-cards">
-  <div class="announce-card">
-    <p>Site Maintenance</p>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Recusandae, dolore odio sint facilis nisi itaque sequi laborum
-      dolorum similique veritatis asperiores, odit enim provident
-      magni voluptas minus? Dolorem, enim atque.
-    </p>
-  </div>
-  <div class="announce-card">
-    <p>Community Share Day</p>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Recusandae, dolore odio sint facilis nisi itaque sequi laborum
-      dolorum similique veritatis asperiores, odit enim provident
-      magni voluptas minus? Dolorem, enim atque.
-    </p> */
+.trending-card{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
