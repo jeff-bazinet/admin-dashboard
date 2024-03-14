@@ -3,50 +3,93 @@
   padding: 0;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    grid-template-areas:
-    "sidebar header"
-    "sidebar main";
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(92, 171, 245);
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
 }
 
 .sidebar {
-    background-color: rgb(92, 171, 245);
-    grid-area: sidebar;
-    width: 370px;
-    height: 100vh;
+  grid-area: sidebar;
+  width: 370px;
+  height: 500px;
+  border: 5px solid greenyellow;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  padding: 10px;
+  margin: 0;
+  align-items: start;
+  grid-template-areas:
+  "header"
+  "menu-top"
+  "menu-bottom";
 }
 
-.header{
-    grid-area: header;
-    background-color: lightblue;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas:
-    "search profile"
-    "greeting buttons";
+.header {
+  grid-area: header;
+  background-color: lightblue;
+  border: 5px solid orange;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 60% 1fr;
+  grid-template-areas:
+    'search profile'
+    'greeting buttons';
 }
 
-.header .search{
-    grid-area: search;
+.header .search {
+  grid-area: search;
 }
 
-.header .profile{
-    grid-area: profile;
+.header .profile {
+  grid-area: profile;
 }
 
-.header .greeting{
-    grid-area: greeting;
+.header .greeting {
+  grid-area: greeting;
 }
 
-.header .action-buttons{
-    grid-area: buttons;
+.header .action-buttons {
+  grid-area: buttons;
 }
 
-.main{
-    grid-area: main;
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 5px solid red;
 }
+
+.main .left{
+    border: 5px solid lightblue;
+}
+
+.main .right{
+    border: 5px solid lightpink;
+}
+
+/* .main .left {
+  display: grid;
+  gap: 50px;
+  border: 1px solid blue;
+  grid-template-rows: 1fr auto;
+}
+
+.main .left .project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid red;
+}
+
+.project-card {
+  width: minmax(200px, auto);
+  height: min(200px);
+  border: 1px solid black;
+  border-radius: 10px;
+} */
