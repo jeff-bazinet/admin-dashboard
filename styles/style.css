@@ -69,27 +69,33 @@ body {
     border: 5px solid lightblue;
 }
 
+.main .left .project-header{
+padding: 30px 30px 10px 20px;
+}
+
 .main .right{
     border: 5px solid lightpink;
 }
 
-/* .main .left {
+.main .left .project-cards{
   display: grid;
-  gap: 50px;
-  border: 1px solid blue;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0px 20px;
+  gap: 20px;
 }
 
+/*
 .main .left .project-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   border: 1px solid red;
 }
-
+*/
 .project-card {
-  width: minmax(200px, auto);
-  height: min(200px);
+  width: minmax(300px, auto);
+  height: min(300px);
   border: 1px solid black;
   border-radius: 10px;
-} */
+  padding: 20px;
+}
