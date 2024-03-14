@@ -4,15 +4,49 @@
 }
 
 body{
+    font-family: "Roboto", sans-serif;
     display: grid;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas:
-    "aside header header header"
-    "aside projects projects annoncements"
-    "asid";
+    "sidebar header"
+    "sidebar main";
 }
 
 .sidebar {
     background-color: rgb(92, 171, 245);
+    grid-area: sidebar;
     width: 370px;
     height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: lightblue;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "search profile"
+    "greeting buttons";
+}
+
+.header .search{
+    grid-area: search;
+}
+
+.header .profile{
+    grid-area: profile;
+}
+
+.header .greeting{
+    grid-area: greeting;
+}
+
+.header .action-buttons{
+    grid-area: buttons;
+}
+
+.main{
+    grid-area: main;
 }
