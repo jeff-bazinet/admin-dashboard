@@ -136,30 +136,27 @@ body {
   padding: 0px 50px;
 }
 
-.profile-image{
+.profile-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   padding: 12px;
-  background-color: rgb(255, 208, 0);
 }
-.profile-image img{
+.profile-image img {
   width: 50px;
   height: auto;
-  transform: translateY(5px);
+  /* transform: translateY(5px); */
 }
 
-.large-profile-image{
+.large-profile-image {
   width: 100px;
-  height:100px;
+  height: 100px;
   border-radius: 50%;
-  padding: 20px;
-  background-color: rgb(255, 208, 0);
+  padding: 15px;
 }
-.large-profile-image img{
+.large-profile-image img {
   width: 100px;
   height: auto;
-  transform: translateY(10px);
 }
 
 .action-buttons {
@@ -317,25 +314,8 @@ body {
   justify-content: center;
   padding-left: 10px;
 }
-
-#profile-2 {
+.trending-card img {
   width: 50px;
   border-radius: 50%;
   padding: 10px;
-  background-color: rgba(184, 238, 252, 0.534);
-}
-#profile-1 {
-  background-color: rgb(255, 208, 0);
-}
-#profile-3 {
-  width: 50px;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(255, 208, 0);
-}
-#profile-4 {
-  width: 50px;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(245, 156, 245);
 }
