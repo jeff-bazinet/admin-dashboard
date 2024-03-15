@@ -140,11 +140,28 @@ body {
   padding: 0px 50px;
 }
 
-.profile img {
+/* .profile img {
   width: 50px;
+  height: 50px;
   background-color: rgb(255, 208, 0);
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
+} */
+
+.profile-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgb(255, 208, 0);
+}
+.profile-image img{
+  width: 50px;
+  height: auto;
+  /* height: auto; */
+  /* display: block; */
+  /* margin: auto; */
+  transform: translateY(5px);
 }
 
 .action-buttons {
@@ -213,23 +230,23 @@ body {
   font-size: 1.25rem;
 }
 
-.project-card-text{
+.project-card-text {
   display: flex;
   flex-direction: column;
 }
 
-.card-icons{
+.card-icons {
   display: flex;
   justify-content: flex-end;
   padding-top: 30px;
   gap: 30px;
 }
 
-.card-icon{
+.card-icon {
   width: 30px;
 }
 
-.card-color{
+.card-color {
   background-color: rgb(255, 208, 0);
   width: 20px;
   position: absolute;
@@ -238,8 +255,8 @@ body {
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  }
-.main .right{
+}
+.main .right {
   padding-right: 20px;
 }
 .announce-header {
@@ -248,7 +265,8 @@ body {
 
 .announce-cards {
   display: grid;
-  padding: 20px;
+  padding: 50px 20px 50px 20px;
+  /* padding: 20px; */
   gap: 20px;
   border: none;
   background-color: #fff;
@@ -262,16 +280,21 @@ body {
   padding: 0px 20px;
 }
 
-.announce-card p:nth-of-type(1){
+.announce-card p:nth-of-type(1) {
   color: rgba(19, 19, 19, 0.9);
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-.announce-card p:nth-of-type(2){
+.announce-card p:nth-of-type(2) {
   color: rgba(19, 19, 19, 0.9);
-  font-size: .75rem;
+  font-size: 0.75rem;
+}
+
+.announcements hr {
+  /* border-color: rgba(19, 19, 19, 0.1); */
+  border: 1px solid rgba(19, 19, 19, 0.1);
 }
 
 .trending-header {
@@ -280,11 +303,39 @@ body {
 
 .trending-cards {
   display: grid;
-  padding: 0px 20px 20px 20px;
+  padding: 50px 20px 50px 20px;
   gap: 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
-
 .trending-card {
   border-radius: 10px;
   padding: 20px;
+  display: flex;
+}
+.trending-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.trending-card img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#profile-2 {
+  background-color: rgba(184, 238, 252, 0.534);
+}
+#profile-1 {
+  background-color: rgb(255, 208, 0);
+}
+#profile-3 {
+  background-color: rgb(255, 208, 0);
+}
+#profile-4 {
+  background-color: rgb(245, 156, 245);
 }
