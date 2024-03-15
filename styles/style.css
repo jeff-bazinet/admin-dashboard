@@ -30,7 +30,6 @@ body {
 .icons {
   fill: white;
   stroke-width: 1;
-  /* stroke: white; */
   width: 30px;
 }
 .dash-icon {
@@ -127,10 +126,7 @@ body {
 
 .greeting img {
   width: 100px;
-  background-color: rgb(255, 208, 0);
-  border-radius: 50%;
-  padding: 10px;
-  /* zoom: 75%; */
+  height: auto;
 }
 
 .profile {
@@ -139,14 +135,6 @@ body {
   align-items: center;
   padding: 0px 50px;
 }
-
-/* .profile img {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(255, 208, 0);
-  border-radius: 50%;
-  padding: 20px;
-} */
 
 .profile-image{
   width: 50px;
@@ -158,10 +146,20 @@ body {
 .profile-image img{
   width: 50px;
   height: auto;
-  /* height: auto; */
-  /* display: block; */
-  /* margin: auto; */
   transform: translateY(5px);
+}
+
+.large-profile-image{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: rgb(255, 208, 0);
+}
+.large-profile-image img{
+  width: 100px;
+  height: auto;
+  transform: translateY(10px);
 }
 
 .action-buttons {
@@ -266,7 +264,6 @@ body {
 .announce-cards {
   display: grid;
   padding: 50px 20px 50px 20px;
-  /* padding: 20px; */
   gap: 20px;
   border: none;
   background-color: #fff;
@@ -293,7 +290,6 @@ body {
 }
 
 .announcements hr {
-  /* border-color: rgba(19, 19, 19, 0.1); */
   border: 1px solid rgba(19, 19, 19, 0.1);
 }
 
@@ -321,21 +317,25 @@ body {
   justify-content: center;
   padding-left: 10px;
 }
-.trending-card img {
+
+#profile-2 {
   width: 50px;
   border-radius: 50%;
   padding: 10px;
-}
-
-#profile-2 {
   background-color: rgba(184, 238, 252, 0.534);
 }
 #profile-1 {
   background-color: rgb(255, 208, 0);
 }
 #profile-3 {
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
   background-color: rgb(255, 208, 0);
 }
 #profile-4 {
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
   background-color: rgb(245, 156, 245);
 }
