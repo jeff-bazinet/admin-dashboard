@@ -187,7 +187,7 @@ body {
 
 .project-card {
   width: minmax(250px, auto);
-  height: min(150px);
+  height: minmax(150px, 150px);
   border-radius: 10px;
   padding: 50px;
   border: none;
@@ -239,21 +239,39 @@ body {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   }
-
+.main .right{
+  padding-right: 20px;
+}
 .announce-header {
-  padding: 30px 30px 0px 20px;
+  padding: 30px 30px 10px 20px;
 }
 
 .announce-cards {
   display: grid;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
   gap: 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .announce-card {
   border-radius: 10px;
   width: minmax(200px, auto);
-  padding: 20px;
+  padding: 0px 20px;
+}
+
+.announce-card p:nth-of-type(1){
+  color: rgba(19, 19, 19, 0.9);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.announce-card p:nth-of-type(2){
+  color: rgba(19, 19, 19, 0.9);
+  font-size: .75rem;
 }
 
 .trending-header {
