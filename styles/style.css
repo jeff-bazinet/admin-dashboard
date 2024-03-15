@@ -33,32 +33,50 @@ body {
   /* stroke: white; */
   width: 30px;
 }
-.dash-icon{
-    fill: white;
-    width: 60px;
+
+.header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-.dashboard{
-    display: flex;
-    align-items: center;
-    padding: 8px 10px 50px 10px;
+.search {
+
 }
-.dashboard-header{
-    padding-left: 20px;
-    font-size: 34px;
+.search-icon {
+  width: 30px;
+}
+.search-bar {
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid red;
+  background-color: rgba(79, 128, 184, 0.1);
+}
+.dash-icon {
+  fill: white;
+  width: 60px;
+}
+.dashboard {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px 50px 10px;
+}
+.dashboard-header {
+  padding-left: 20px;
+  font-size: 34px;
 }
 .menu-icon {
   display: flex;
   align-items: center;
 }
-.menu-top{
-    margin-bottom: 60px;
+.menu-top {
+  margin-bottom: 60px;
 }
 
 .sidebar a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 500;
-  font-size: 1.70rem;
+  font-size: 1.7rem;
   padding-left: 30px;
 }
 
