@@ -15,7 +15,7 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  width: 350px;
+  width: 360px;
   height: 600px;
   display: grid;
   grid-template-rows: 1fr 2fr 2fr;
@@ -34,23 +34,6 @@ body {
   width: 30px;
 }
 
-.header{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-.search {
-
-}
-.search-icon {
-  width: 30px;
-}
-.search-bar {
-  height: 50px;
-  border-radius: 50px;
-  border: 1px solid red;
-  background-color: rgba(79, 128, 184, 0.1);
-}
 .dash-icon {
   fill: white;
   width: 60px;
@@ -84,32 +67,31 @@ body {
   padding: 15px;
 }
 
-.header {
-  background-color: white;
-  grid-area: header;
+.header{
+  background-color: #fff;
   display: grid;
-  align-items: center;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 60% 1fr;
-  grid-template-areas:
-    'search profile'
-    'greeting buttons';
 }
 
-.header .search {
-  grid-area: search;
+.search{
+  color: #fff;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
 }
 
-.header .profile {
-  grid-area: profile;
+.search-icon {
+  width: 30px;
+  padding-right: 20px;
 }
 
-.header .greeting {
-  grid-area: greeting;
-}
-
-.header .action-buttons {
-  grid-area: buttons;
+.search-bar {
+  height: 40px;
+  border-radius: 50px;
+  width: 75%;
+  background-color: rgba(79, 128, 184, 0.1);
 }
 
 .main {
@@ -118,9 +100,6 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding-bottom: 20px;
-}
-
-.main .left {
 }
 
 .main .left .project-header {
@@ -139,9 +118,6 @@ body {
   height: min(300px);
   border-radius: 10px;
   padding: 20px;
-}
-
-.main .right {
 }
 
 .announce-header {
